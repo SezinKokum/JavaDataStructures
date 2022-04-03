@@ -47,4 +47,29 @@ public class SinglyLinkedList<T> {
         }
         System.out.println(temp.data.toString() + " -> null");
     }
+    /*Output
+List is Empty!
+List : 1 -> null
+List : 2 -> 1 -> null
+List : 3 -> 2 -> 1 -> null
+List : 4 -> 3 -> 2 -> 1 -> null
+List : 5 -> 4 -> 3 -> 2 -> 1 -> null
+List : 6 -> 5 -> 4 -> 3 -> 2 -> 1 -> null
+List : 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 -> null
+List : 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 -> null
+List : 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 -> null
+List : 10 -> 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 -> null
+
+class ListDemo {
+    public static void main( String args[] ) {
+        SinglyLinkedList<Integer> sll = new SinglyLinkedList<Integer>();
+        sll.printList();
+        for (int i = 1; i <= 10; i++) {
+            sll.insertAtHead(i);
+            sll.printList();
+        }
+    }
+}
+
+    */
 }
