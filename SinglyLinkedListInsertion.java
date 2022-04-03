@@ -1,4 +1,4 @@
-public class SinglyLinkedList<T> {
+public class SinglyLinkedListInsertion<T> {
 //Node inner class for SLL
     public class Node {
         public T data;
@@ -75,7 +75,7 @@ public class SinglyLinkedList<T> {
 /* below part will be an another main.java class
 class CheckInsertion {
     public static void main( String args[] ) {
-        SinglyLinkedList<Integer> sll = new SinglyLinkedList<Integer>();
+        SinglyLinkedList<Integer> sll = new SinglyLinkedListInsertion<Integer>();
         sll.printList();
         for (int i = 1; i <= 10; i++) {
                   sll.insertAtEnd(i);
